@@ -1,0 +1,22 @@
+{
+    "icons": [
+        {
+            "src": "/images/favicon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/favicon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "name": "leven.dev front page",
+    "short_name": "leven.dev",
+    "display": "standalone",
+    "theme_color": "#FF5400",
+    "background_color": "#000000",
+    "scope": "/"
+}
