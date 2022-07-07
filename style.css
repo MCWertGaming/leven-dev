@@ -8,6 +8,8 @@
 .header {
     display: flex;
     justify-content: space-around;
+    height: 100vh;
+    min-height: 800px;
 }
 
 .header-part {
