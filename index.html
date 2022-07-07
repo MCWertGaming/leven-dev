@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <!-- de-DE -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="The leven.dev homepage..">
-        <!-- <meta name="theme-color" content="#FC731E"> -->
-        <title>leven.dev</title>
-        <link rel="stylesheet" href="/style.css">
-        <!-- <link rel="icon" href="/icons/favicon-512.png" sizes="any"> -->
-        <!-- <link rel="icon" href="/images/dleven.svg" type="image/svg+xml"> -->
-        <!-- <link rel="apple-touch-icon" href="/icons/favicon-512.png"> -->
-        <!-- <link rel="manifest" href="/manifest.json"> -->
-    </head>
 
-    <section class="header">
-        <div>
-            <!-- header stuff -->
-            <nav class="task-bar">
-                <!-- left icons -->
-                <div class="taskbar-left">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The leven.dev homepage.">
+    <meta name="theme-color" content="#FF5400">
+    <title>leven.dev</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/favicon-512.png" sizes="any">
+    <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/favicon-512.png">
+    <link rel="manifest" href="/manifest.json">
+</head>
 
-                <!-- time and date -->
-                <div class="task-bar-center">
-                    <p>Fri May 6  16:42</p>
-                </div>
-
-                <!-- status icons -->
-                <div class="task-bar-right">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                    <img src="icons/github-brands.svg" alt="GitHub logo">
-                </div>
-            </nav>
-            <div class="logo">
-                <h1>leven.dev</h1>
-                <img src="images/dleven.svg" alt="leven.dev logo">
-            </div>
-            <div class="link-boxes">
-                <!-- link boxes-->
-                <div class="link-box">
-                    <div class="link-box-background">
-
-                        <div class="link-box-header">
-                            <img src="icons/github-brands.svg" alt="github logo">
-                            <h1>Projects</h1>
-                        </div>
-                        <p>Foxspace</p>
-                        <p>Foxterm</p>
-                        <p>Foxcraft</p>
-                        <p>Authfox</p>
-                        <p>FCalc</p>
-                        <p>Snek</p>
-                        <p>CPP-Terminal</p>
-                    </div>
-                </div>
-                <div class="link-box">
-                    <div class="link-box-background">
-                        <div class="link-box-header">
-                            <img src="icons/github-brands.svg" alt="github logo">
-                            <h1>*.leven.dev</h1>
-                        </div>
-                        <p>leven.dev</p>
-                        <p>damon.leven.dev</p>
-                        <p>OpenFoxBlog.leven.dev</p>
-                        <p>api.leven.dev</p>
-                        <p>archlinux.leven.dev</p>
-                        <p>docker.leven.dev</p>
-                    </div>
-                </div>
-                <div class="link-box">
-                    <div class="link-box-background">
-                        <div class="link-box-header">
-                            <img src="icons/github-brands.svg" alt="github logo">
-                            <h1>Tools</h1>
-                        </div>
-                        <p>GitHub</p>
-                        <p>Protonmail</p>
-                        <p>Chocolatey</p>
-                        <p>Codingame</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
+<section class="header">
+    <div class="header-part">
+        <h1>leven.dev</h1>
+        <img src="images/logo.svg" title="The leven.dev logo">
+        <div class="header-text">
+            <div class="header-dev">Dev</div>
+            <div class="header-separator">|</div>
+            <div class="header-ops">Ops</div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section>
+    <div class="box-section">
+        <div class="boxes">
+            <h1>*.leven.dev</h1>
+            <a href="https://damon.leven.dev/" title="Website of Damon leven">
+                <p>Damon</p>
+            </a>
+            <a href="#" title="Blog of Damon Leven">
+                <p>FoxBlog</p>
+            </a>
+            <a href="#" title="The git server of leven.dev">
+                <p>Gitea</p>
+            </a>
+            <a href="#" title="The CI/CD server of leven.dev">
+                <p>Drone</p>
+            </a>
+        </div>
+        <div class="boxes">
+            <h1>Projects</h1>
+            <a href="https://github.com/jupyter-xeus/cpp-terminal" target="_blank" title="Github link to CPP-Terminal">
+                <p>CPP-Terminal</p>
+            </a>
+        </div>
+        <div class="boxes">
+            <h1>Tools</h1>
+            <a href="https://wiki.archlinux.org/" target="_blank" title="Link of the official Archlinux wiki">
+                <p>Archlinux wiki</p>
+            </a>
+            <a href="https://www.powershellgallery.com/" target="_blank" title="Link to the Powershell gallery">
+                <p>PSGallery</p>
+            </a>
+            <a href="https://chocolatey.org/" target="_blank" title="Link to Chocolatey">
+                <p>Chocolatey</p>
+            </a>
+            <a href="https://github.com/" target="_blank" title="Link to Github">
+                <p>Github</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    Copyright (c) 2022: Damon leven
+</footer>
+<!-- setup service-worker -->
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register(
+            'service-worker.js'
+        ).then(function () {
+            console.log('Registration Successful');
+        });
+    }
+</script>
 
 </html>
